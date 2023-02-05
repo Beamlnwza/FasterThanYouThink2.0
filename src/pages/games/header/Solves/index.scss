@@ -1,0 +1,19 @@
+.SolvesWrapper {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+  gap: 10px;
+
+  background-color: transparent;
+  color: #222222;
+  transition-duration: 0.5s;
+
+  padding: 5px 10px 5px 10px;
+
+  &:hover {
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+  }
+}
