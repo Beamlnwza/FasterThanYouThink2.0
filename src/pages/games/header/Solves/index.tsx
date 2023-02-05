@@ -9,7 +9,7 @@ const Solves = () => {
   return (
     <div className="SolvesWrapper">
       <div>{Solve}</div>
-      <div>PROBLEM SOLVED</div>
+      <div>TOTAL PROBLEM SOLVED</div>
     </div>
   )
 }
