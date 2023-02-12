@@ -4,20 +4,6 @@ import { useState, useEffect } from 'react'
 import './css/index.css'
 
 const About = () => {
-  const [Solved, setSolved] = useState(0)
-  const [posNumber, setPosNumber] = useState<number>(4 ** 8)
-
-  useEffect(() => {
-    randomPos()
-  }, [])
-
-  const randomPos = async () => {
-    let timeout = await setTimeout(() => {
-      setPosNumber(Math.floor(Math.random() * 100000) + 1)
-    }, 1000)
-    await setPosNumber(4 ** 8)
-  }
-
   return (
     <>
       <HeaderGames />
