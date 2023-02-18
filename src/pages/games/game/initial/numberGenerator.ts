@@ -5,9 +5,9 @@ const numberGenerator = (range: number): number[] => {
     numbers.push(number)
 
     //check if last number is condition
-    /*     if (condition(numbers)) {
+    if (condition(numbers)) {
       numbers.pop()
-    } */
+    }
   }
   return numbers
 }

@@ -5,6 +5,7 @@ import { gameAtom as gameState } from './gameAtom'
 
 import './css/index.css'
 import Input from './input'
+import Calc from './math/calc'
 
 const Game = () => {
   const [state, setState] = useRecoilState(gameState)
@@ -15,6 +16,7 @@ const Game = () => {
     <>
       <div className="game-wrapper">
         <div className="numbers-wrapper">
+          <div className="exam">{state['message']}</div>
           <div className="numbers">
             {state['numbers'].map((number, index) => (
               <div key={index}>{number}</div>
@@ -24,6 +26,7 @@ const Game = () => {
         </div>
         <Input />
       </div>
+      <Calc />
     </>
   )
 }
