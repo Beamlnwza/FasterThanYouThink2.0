@@ -1,0 +1,20 @@
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.numbers-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 0;
+
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    gap: 10px;
+  }
+}

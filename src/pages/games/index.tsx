@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './css/index.css'
 import HeaderGames from './header'
-import MainBody from './mainBody'
+import Game from './game'
 
 export const Games = () => {
   return (
@@ -11,7 +11,7 @@ export const Games = () => {
           <HeaderGames />
         </div>
         <div className="main-body">
-          <MainBody />
+          <Game />
         </div>
       </div>
       <div className="background"></div>
