@@ -12,6 +12,12 @@ const Input = () => {
     setInputField(e.target.value)
   }
 
+  const onEnterHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      buttonOnClickHandler()
+    }
+  }
+
   useEffect(() => {
     if (inputRef.current) {
       inputRef.current.focus()
@@ -36,6 +42,7 @@ const Input = () => {
         ref={inputRef}
         value={inputField}
         onChange={onChangeHandler}
+        onKeyDown={onEnterHandler}
       />
       <input type="button" value="Click me" onClick={buttonOnClickHandler} />
     </div>
